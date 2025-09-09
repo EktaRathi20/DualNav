@@ -1,0 +1,18 @@
+/* For Chrome, Edge, Safari */
+
+#sidebar-1::-webkit-scrollbar,
+#icon-container::-webkit-scrollbar {
+  width: 0.275rem;
+  height: 0.5rem;
+}
+
+#sidebar-1::-webkit-scrollbar-track,
+#icon-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#sidebar-1::-webkit-scrollbar-thumb,
+#icon-container::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}

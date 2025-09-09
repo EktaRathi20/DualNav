@@ -1,0 +1,125 @@
+#sidebar-2 {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0px 2px 8px var(--shadow);
+  background-color: var(--sidebar-bg);
+  transition: width 0.3s ease, padding 0.3s ease;
+  border-radius: 8px;
+  padding: 0.125rem;
+}
+
+.block-1 {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--icon-default);
+  transition: fill 0.2s ease;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+/*  
+  EXPANDED SIDEBAR (.right) 
+*/
+.right #sidebar-2 {
+  width: 16rem;
+}
+
+.right .search {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-bg);
+  padding: 4px 8px;
+  margin: 0.5rem;
+  border-radius: 6px;
+  width: 14rem;
+  transition: border-color 0.2s ease;
+}
+
+.right .search:focus-within {
+  border-color: var(--accent-color);
+}
+
+.right .search-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.right .block-1 label {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+/* 
+  SLIM SIDEBAR (.left)
+*/
+.left #sidebar-2 {
+  width: 2.5rem;
+}
+
+.left .search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.left .search input {
+  display: none;
+}
+
+.left .search-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.left .search:hover {
+  background: var(--hover-bg);
+}
+
+.left .block-1 label {
+  display: none;
+}
+
+.left .block-1 {
+  justify-content: center;
+}
+
+/* OTHER CSS */
+.menu-item {
+  padding: 6px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.menu-item:hover {
+  background: var(--hover-bg);
+}
+
+.menu-title {
+  font-weight: 500;
+  color: var(--text-primary);
+}

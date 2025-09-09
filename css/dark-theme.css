@@ -1,0 +1,116 @@
+.dark-theme {
+  /* Dark Theme Color Variables */
+  --primary-bg: #0d1117;
+  --secondary-bg: #161b22;
+  --sidebar-bg: #0d1117;
+  --content-bg: #0d1117;
+  --text-primary: #f0f6fc;
+  --text-secondary: #8b949e;
+  --border-color: #30363d;
+  --hover-bg: rgba(177, 186, 196, 0.12);
+  --active-bg: #1f6feb;
+  --active-text: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --accent-color: #1f6feb;
+  --submenu-border: #30363d;
+
+  /* Icon Colors */
+  --icon-default: #8b949e;
+  --icon-hover: #f0f6fc;
+  --icon-active: #ffffff;
+
+  background: var(--primary-bg);
+}
+
+.dark-theme #sidebar-1,
+.dark-theme #sidebar-2 {
+  background-color: var(--sidebar-bg);
+  border: 1px solid var(--border-color);
+}
+
+.dark-theme #content {
+  background-color: var(--content-bg);
+  color: var(--text-primary);
+}
+
+.dark-theme #sidebar-label {
+  color: var(--text-primary);
+}
+
+/* LOGO */
+.dark-theme .logo svg {
+  fill: var(--accent-color);
+}
+
+/* ICON */
+.dark-theme .icon svg,
+.dark-theme .search-icon svg {
+  fill: var(--icon-default);
+}
+
+.dark-theme .icon:hover {
+  background-color: var(--hover-bg) !important;
+}
+
+.dark-theme .icon:hover svg {
+  fill: var(--icon-hover);
+}
+
+.dark-theme .icon.active {
+  background-color: var(--active-bg) !important;
+}
+
+.dark-theme .icon.active svg {
+  fill: var(--icon-active);
+}
+
+/* INPUT */
+.dark-theme .search input {
+  background: none;
+  color: var(--text-primary);
+}
+
+.dark-theme .right .search {
+  background-color: var(--secondary-bg);
+  border-color: var(--border-color);
+}
+
+.dark-theme .right .search:focus-within {
+  border-color: var(--accent-color);
+}
+
+/* MENU */
+.dark-theme .menu-title {
+  color: var(--text-primary);
+}
+
+.dark-theme .menu-item:hover {
+  background-color: var(--hover-bg) !important;
+}
+
+.dark-theme .menu-item .icon:hover {
+  background-color: unset !important;
+}
+
+.dark-theme .menu-item:hover .icon svg {
+  fill: var(--icon-hover);
+}
+
+.dark-theme .menu-item:hover .menu-title {
+  color: var(--text-primary);
+}
+
+.dark-theme .submenu-item {
+  color: var(--text-secondary);
+  border-left-color: var(--border-color);
+}
+
+.dark-theme .submenu-item:hover {
+  background-color: var(--hover-bg);
+  border-left-color: var(--accent-color);
+  color: var(--text-primary);
+}
+
+.dark-theme #toggle-theme {
+  fill: var(--icon-default);
+}
