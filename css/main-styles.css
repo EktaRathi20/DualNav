@@ -20,6 +20,7 @@
   --shadow: rgba(0, 0, 0, 0.1);
   --accent-color: #007acc;
   --submenu-border: #dee2e6;
+  --submenu-bg: #ffffff;
 
   /* Icon Colors */
   --icon-default: #6c757d;
@@ -59,4 +60,8 @@ body {
   width: 100%;
   padding: 1rem;
   border-radius: 8px;
+}
+
+#sidebar-secondary {
+  position: relative;
 }
