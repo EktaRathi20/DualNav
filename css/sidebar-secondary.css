@@ -123,3 +123,32 @@
   font-weight: 500;
   color: var(--text-primary);
 }
+
+#compact-menu-items .submenu {
+  position: absolute;
+  background-color: var(--submenu-bg);
+  width: 200px;
+  padding: 0.5rem;
+  display: none;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  left: 2.7rem;
+}
+
+#compact-menu-items .submenu.visible {
+  display: block;
+}
+
+#compact-menu-items .submenu-item {
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+#compact-menu-items .submenu-item:hover {
+  background-color: var(--hover-bg);
+}
